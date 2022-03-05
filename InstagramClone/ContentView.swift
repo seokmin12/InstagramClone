@@ -9,8 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(spacing: 0) {
+            HStack {
+                Text("Instagram").font(Font.custom("Snell Roundhand Bold", size: 25))
+                Spacer()
+                HStack {
+                    Image(systemName: "plus.app").font(.system(size: 25)).padding(5)
+                    Image(systemName: "heart").font(.system(size: 25)).padding(5)
+                    Image(systemName: "paperplane").font(.system(size: 25)).padding(5)
+                }
+            }
+            Spacer()
+        }
     }
 }
 
